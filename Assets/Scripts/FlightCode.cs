@@ -1,24 +1,33 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class FlightCode : MonoBehaviour {
+public class FlightCode : MonoBehaviour
+{
     public GameManager gameManager;
     public float velocity = 1;
-    private Rigidbody2D rb;
+    public Rigidbody2D rb;
+    public SoundManager soundManager;
+    public Score score;
 
-    void Start() {
-        rb = GetComponent<Rigidbody2D>();
-    }
-
-    void Update() {
-        if (Input.GetMouseButtonDown(0) && Time.timeScale != 0) {
-            SoundManager.playSound("fly");
+    void Update()
+    {
+        if (Input.GetMouseButtonDown(0) && Time.timeScale != 0)
+        {
+            soundManager.playSound("fly");
             rb.velocity = Vector2.up * velocity;
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision) {
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Log")
+        {
+            soundManager.playSound("score");
+            score.score++;
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
         gameManager.gameOver();
     }
 }
