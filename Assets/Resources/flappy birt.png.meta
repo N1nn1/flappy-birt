@@ -566,10 +566,10 @@ TextureImporter:
         serializedVersion: 2
         x: 82
         y: 241
-        width: 43
+        width: 75
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -577,6 +577,174 @@ TextureImporter:
       bones: []
       spriteID: bea9efc66fb4d7a4b8787b3031950c62
       internalID: 146513253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: menu
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 174
+        width: 42
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c606f8c363efcbb4e9ef1d112edd4c0c
+      internalID: -1884144050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: menu_hover
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 174
+        width: 42
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2db7536016c4f6f439e4e848ca693d77
+      internalID: -1703879680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: menu_select
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 42
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4453634c515842a4e82fb7b0a9100db2
+      internalID: 1461812893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: title
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 216
+        width: 108
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5868b1a1d40b7e647bcbfd23bd566042
+      internalID: 596175220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: high_score
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 247
+        width: 55
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af0071d509811744cb7426ff9cf5ce7d
+      internalID: 1006342791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: start_button
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 216
+        width: 49
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11fe83a23be6d3b4f913cadd8047cd62
+      internalID: -1841468035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: start_hover
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 216
+        width: 49
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6efc1350e07e5f44b90633990c2cd168
+      internalID: 2097519423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: start_pressed
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 189
+        width: 49
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ced0704f3199af541958d0572bd6a92e
+      internalID: 1542443064
       vertices: []
       indices: 
       edges: []
@@ -593,26 +761,34 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       log_top: -1347335281
+      menu: -1884144050
+      menu_hover: -1703879680
       restart_select: 895969193
       flappy birt_0: 1810609282
+      start_hover: 2097519423
       log_special_top: 1513508597
       flappy birt_5: -266013064
       restart: -382671145
       bg_day: -762109497
+      title: 596175220
       flappy birt_1: 717830850
       game_over: 1832556771
       log_bottom: -1335520403
       lose_overlay: -615792872
       foreground: 421921761
       log_special_bottom: -2041076193
+      start_pressed: 1542443064
       flappy birt_3: -1796912758
       bg_2: -2089732763
       restart_hover: -511591087
+      menu_select: 1461812893
       bg_night: -1824414989
       flappy birt_2: -51697122
       start: 146513253
       flappy birt_4: -1743917266
       floor: 1481895940
+      start_button: -1841468035
+      high_score: 1006342791
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

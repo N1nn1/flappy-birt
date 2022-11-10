@@ -1,4 +1,5 @@
 using UnityEngine;
+using TMPro;
 
 public class FlightCode : MonoBehaviour
 {
@@ -6,7 +7,7 @@ public class FlightCode : MonoBehaviour
     public float velocity = 1;
     public Rigidbody2D rb;
     public SoundManager soundManager;
-    public Score score;
+    public Score scoreManager;
 
     void Update()
     {
@@ -22,7 +23,8 @@ public class FlightCode : MonoBehaviour
         if (collision.gameObject.tag == "Log")
         {
             soundManager.playSound("score");
-            score.score++;
+            scoreManager.score++;
+            gameManager.updatehighScore();
         }
     }
 
