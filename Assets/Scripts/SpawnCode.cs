@@ -11,7 +11,7 @@ public class SpawnCode : MonoBehaviour
     {
         GameObject newLog = Instantiate(log);
         newLog.transform.position = transform.position + new Vector3(0, Random.Range(-height, height), 0);
-        Destroy(newLog, 15);
+        Destroy(newLog, 0);
     }
 
     void Update()

@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public GameObject gameOverCanvas;
+    public GameObject menuCanvas;
     public SoundManager soundManager;
     public Score score;
     public HighScore highScore;
@@ -11,6 +12,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         updatehighScore();
+        menuCanvas.SetActive(false);
         gameOverCanvas.SetActive(false);
         Time.timeScale = 1;
     }
@@ -19,18 +21,19 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 0;
         gameOverCanvas.SetActive(true);
+        menuCanvas.SetActive(false);
         soundManager.playSound("lose");
     }
 
-    public void restart()
+    public void startGame()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("Game Scene");
     }
 
     public void goToMainMenu()
     {
+        menuCanvas.SetActive(true);
         gameOverCanvas.SetActive(false);
-        SceneManager.LoadScene(0, LoadSceneMode.Additive);
     }
 
     public void updatehighScore()
