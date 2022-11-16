@@ -728,6 +728,69 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: quit
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 174
+        width: 36
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bb898708195e21489e259314051d39f
+      internalID: -656875904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quit_hover
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 174
+        width: 36
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ec38d30656ac82488b54830179e3932
+      internalID: 670661583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quit_select
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 160
+        width: 36
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6247d7ca6890ea949ab64dff05e3c0ac
+      internalID: 1149036989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -750,11 +813,13 @@ TextureImporter:
       restart: -382671145
       bg_day: -762109497
       title: 596175220
+      quit: -656875904
       flappy birt_1: 717830850
       game_over: 1832556771
       log_bottom: -1335520403
       lose_overlay: -615792872
       foreground: 421921761
+      quit_select: 1149036989
       log_special_bottom: -2041076193
       start_pressed: 1542443064
       flappy birt_3: -1796912758
@@ -767,6 +832,7 @@ TextureImporter:
       flappy birt_4: -1743917266
       floor: 1481895940
       start_button: -1841468035
+      quit_hover: 670661583
       high_score: 1006342791
   spritePackingTag: 
   pSDRemoveMatte: 0

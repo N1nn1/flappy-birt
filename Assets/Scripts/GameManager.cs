@@ -30,6 +30,11 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("Game Scene");
     }
 
+    public void quitGame()
+    {
+        Application.Quit();
+    }
+
     public void goToMainMenu()
     {
         menuCanvas.SetActive(true);
