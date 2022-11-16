@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
-    public AudioClip flySound, loseSound, scoreSound;
+    public AudioClip flySound, loseSound, scoreSound, music;
     public AudioSource audioSrc;
 
     public void playSound(string clip)

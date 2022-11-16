@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
 
     public void startGame()
     {
+        BGMusic.instance.GetComponent<AudioSource>().UnPause();
         SceneManager.LoadScene("Game Scene");
     }
 
@@ -37,6 +38,7 @@ public class GameManager : MonoBehaviour
 
     public void goToMainMenu()
     {
+        BGMusic.instance.GetComponent<AudioSource>().Pause();
         menuCanvas.SetActive(true);
         gameOverCanvas.SetActive(false);
     }
